@@ -7,7 +7,7 @@
     tools:context="com.pjx.skad.calculadora.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/calcText"
         android:layout_width="0dp"
         android:layout_height="180dp"
         android:background="@android:color/white"
@@ -30,7 +30,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" android:baselineAligned="false">
+        app:layout_constraintTop_toTopOf="parent"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,35 +50,38 @@
                 tools:layout_editor_absoluteY="8dp">
 
                 <TextView
-                    android:id="@+id/button7"
+                    android:id="@+id/sevenButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="7"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/button8"
+                    android:id="@+id/eightButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="8"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/button9"
+                    android:id="@+id/nineButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="9"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
@@ -93,35 +97,38 @@
                 tools:layout_editor_absoluteY="8dp">
 
                 <TextView
-                    android:id="@+id/button4"
+                    android:id="@+id/fourButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="4"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/button5"
+                    android:id="@+id/fiveButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="5"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/button6"
+                    android:id="@+id/sixButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="6"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
@@ -137,35 +144,38 @@
                 tools:layout_editor_absoluteY="8dp">
 
                 <TextView
-                    android:id="@+id/button1"
+                    android:id="@+id/oneButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="1"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/button2"
+                    android:id="@+id/twoButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="2"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/button3"
+                    android:id="@+id/threeButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="3"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -180,35 +190,38 @@
                 tools:layout_editor_absoluteY="8dp">
 
                 <TextView
-                    android:id="@+id/buttonPoint"
+                    android:id="@+id/alterButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
-                    android:text="."
+                    android:text="+/-"
+                    android:onClick="operationClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/button0"
+                    android:id="@+id/zeroButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="0"
+                    android:onClick="numberClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/buttonEquals"
+                    android:id="@+id/eqlsButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/colorButtons"
                     android:text="="
+                    android:onClick="eqlsClick"
                     android:textColor="#ffff"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -222,56 +235,61 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/buttonDel"
+                android:id="@+id/acButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/operationButtons"
-                android:text="Del"
+                android:text="AC"
+                android:onClick="acClick"
                 android:textColor="#ffff"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/buttonDivision"
+                android:id="@+id/divButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/operationButtons"
+                android:onClick="operationClick"
                 android:text="÷"
                 android:textColor="#ffff"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/buttonMultiplication"
+                android:id="@+id/multButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/operationButtons"
                 android:text="x"
+                android:onClick="operationClick"
                 android:textColor="#ffff"
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/buttonMinus"
+                android:id="@+id/minButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/operationButtons"
                 android:text="-"
+                android:onClick="operationClick"
                 android:textColor="#ffff"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/buttonPlus"
+                android:id="@+id/plusButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@color/operationButtons"
+                android:onClick="operationClick"
                 android:text="+"
                 android:textColor="#ffff"
                 android:textSize="18sp" />
